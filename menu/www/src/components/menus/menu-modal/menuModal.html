@@ -1,0 +1,27 @@
+<div class="MenuModal-background" ng-click="ctrl.close()"></div>
+<div class="MenuModal-modal">
+    <div class="MenuModal-title">
+        <button type="button" class="close" aria-label="Close" ng-click="ctrl.close()"><span
+                aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="MenuModal-content">
+        <div class="row" ng-repeat="dish in ctrl.dishes.results track by dish.id">
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <img ng-src="{{ dish.image ? '/static/' + dish.image : '/static/placeholder.png' }}" alt="Responsive image">
+                    <div class="caption">
+                        <h3>{{ dish.name }}</h3>
+                        <p><b>Price:</b> {{ dish.price | currency:'PLN' }}</p>
+                        <p><b>Vegan:</b> {{ dish.vegan ? 'Yes' : 'No' }}</p>
+                        <p><b>Preparation time:</b> {{ dish.preparation_time }}</p>
+                        <p><b>Description:</b> {{ dish.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>

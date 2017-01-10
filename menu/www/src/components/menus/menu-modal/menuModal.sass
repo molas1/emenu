@@ -1,0 +1,51 @@
+menu-modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10000
+  background: transparent
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow-y: scroll
+
+  .MenuModal
+    &-background
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: rgba(0, 0, 0, 0)
+
+    &-modal
+      z-index: 1000
+      width: 600px
+      display: inline-block
+      border: 1px solid #A7A7A7
+      border-radius: 4px
+      background: white
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.36)
+      position: relative
+      margin: auto
+
+    &-content
+      padding: 6px 25px 25px
+
+    &-title
+      padding: 7px 7px 0 0
+      position: relative
+      text-align: right
+
+      &-close
+        padding: 5px
+        border-radius: 50%
+        font-size: 12px !important
+        cursor: pointer
+        transition: all 250ms
+
+        &:hover
+          background: #ff6d6d
+          color: white

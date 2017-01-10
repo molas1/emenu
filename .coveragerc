@@ -1,0 +1,6 @@
+[run]
+branch = True
+omit =
+    */__init__.py
+    menu/migrations/*
+    menu/management/commands/create_fakes.py

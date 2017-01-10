@@ -1,0 +1,26 @@
+<div class="container">
+    <div ng-view class="container c-grow"></div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <paginator menus="ctrl.menus" ng-if="ctrl.loaded" page-switch="ctrl.pageChange(page)"></paginator>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-2">
+            <select class="form-control"
+                    ng-model="ctrl.ordering"
+                    ng-options="item.value as item.label for item in ctrl.orderingChoices track by item.value"
+                    ng-change="ctrl.refreshMenus()">
+                <option value="" ng-show="false">Order by: Id</option>
+            </select>
+        </div>
+        <div class="checkbox col-md-10">
+            <label>
+                <input type="checkbox" ng-click="ctrl.flipOrderingDirection()" checked="checked">Ascending
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <menus menus="ctrl.menus" ng-if="ctrl.loaded"></menus>
+    </div>
+</div>

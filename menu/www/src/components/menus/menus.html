@@ -1,0 +1,13 @@
+<div class="container">
+    <menu-modal
+            ng-if="ctrl.loaded"
+            on-close="ctrl.onMenuModalClose()"
+            dishes="ctrl.loadeddishes">
+    </menu-modal>
+    <div class="list-group">
+        <a ng-repeat="m in ctrl.menus.results" href="#" class="list-group-item" ng-click="ctrl.menuItemClicked(m.id)">
+            <h4 class="list-group-item-heading">{{ m.name }}</h4>
+            <p class="list-group-item-text">{{ m.description }}</p>
+        </a>
+    </div>
+</div>

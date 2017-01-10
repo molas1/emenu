@@ -1,0 +1,8 @@
+<ul class="pagination pagination-sm">
+    <li class="{{ ctrl.menus.previous ? 'active' : 'disabled' }}"><a ng-click="ctrl.previousPage()"
+                                                                     href="#">Previous</a></li>
+    <li class="{{ ctrl.page == p ? 'active' : '' }}" ng-repeat="p in ctrl.getIndexes()"><a
+            ng-click="ctrl.changePage(p)" href="#">{{ p }} <span class="sr-only">(current)</span></a></li>
+    <li class="{{ ctrl.menus.next ? 'active' : 'disabled' }}"><a ng-click="ctrl.nextPage()" href="#">Next</a></li>
+</ul>
+
