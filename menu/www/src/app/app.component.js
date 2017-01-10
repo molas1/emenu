@@ -4,7 +4,7 @@ import template from './app.html'
 const controller = function (MenuResource) {
     this.$onInit = function () {
         this.current_page = 1;
-        this.ordering = 'dish_count';
+        this.ordering = 'pk';
         this.orderingDirection = '';
         this.orderingChoices = [{value: 'pk', label: 'Id'}, {value: 'name', label: 'Name'}, {value: 'dish_count', label: 'Dish count'}];
         this.refreshMenus();
