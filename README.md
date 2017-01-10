@@ -6,7 +6,7 @@ Install instructions for linux/mac
 
 Clone sources from github
 ```bash
-git clone https://github.com/wmolicki/emenu.git
+git clone https://github.com/molas1/emenu.git
 ```
 
 Create virtualenv and install python packages
