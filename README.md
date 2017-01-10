@@ -48,14 +48,14 @@ npm install -g webpack
 webpack --watch
 ```
 
-6. Run tests with pytest (show coverage results by opening `htmlcov/index.html` in web browser)
+5. Run tests with pytest (show coverage results by opening `htmlcov/index.html` in web browser)
 
 ```bash
 pytest
 ```
 
 
-5. Run django's dev server to serve ng-api. We also serve static files from there.
+6. Run django's dev server to serve ng-api. We also serve static files from there.
 
 ```bash
 python manage.py runserver 0.0.0.0:8001
@@ -63,6 +63,6 @@ python manage.py runserver 0.0.0.0:8001
 
 
 7. Open app on [http://0.0.0.0:8001](http://0.0.0.0:8001). You can access django-admin 
-using credentials: _admin@password123_ at [http://0.0.0.0:8001/](http://0.0.0.0:8001/admin/). 
+using credentials: _admin@password123_ at [http://0.0.0.0:8001/admin/](http://0.0.0.0:8001/admin/). 
 
 
