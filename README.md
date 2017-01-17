@@ -55,4 +55,6 @@ python manage.py runserver 0.0.0.0:8001
 
 Open app on [http://0.0.0.0:8001](http://0.0.0.0:8001). You can access django-admin using credentials: _admin@password123_ at [http://0.0.0.0:8001/admin/](http://0.0.0.0:8001/admin/). 
 
+Working app can be accessed on https://bigmek123.pythonanywhere.com/
+
 
